@@ -1,0 +1,521 @@
+@media (max-width: 768px) {
+  .menu-hamburger {
+      display: block;
+  }
+
+  /* Cacher le menu de navigation par défaut */
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: #f0f0f0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 1;
+  }
+
+  /* Afficher le menu de navigation lorsqu'on clique sur le menu hamburger */
+  .navbar-links.show {
+      display: flex;
+  }
+ 
+  .card {
+    
+    padding: 0px;
+    margin: 10px;
+  
+  
+  }
+}
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+    
+    body {
+      min-height: 100vh;
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      padding: 0 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      position: relative;
+      float: left;
+    }
+    
+    header .navbar ul {
+      font-size: 20px;
+      padding: 0 20px;
+      color: black;
+      height: 100%;
+    }
+    
+    .navbar li {
+      padding: 20px 20px;
+    }
+    
+    .navbar a {
+      color: black;
+    }
+    
+    .navbar li:hover {
+      background-color: green;
+      color: white;
+    }
+    
+    .logo {
+      width: 200px;
+    }
+    #menu_hamburger{
+      display: none;
+      position: absolute;
+      right: 50px;
+  }
+    
+  
+  
+    .bienvenue{
+           
+          background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/markus-spiske-ZKNsVqbRSPE-unsplash.jpg');
+          padding: 80px;
+          height: 100vh;
+          background-size: cover;background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: white;
+    }
+    
+    .bienvenue .titre {
+      font-size: 52px;
+      margin-bottom: 20px;
+  }
+  
+  .bienvenue .description {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  
+   .button {
+      display: inline-block;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+  }
+  
+  .bienvenue .button:hover {
+      background-color: darkgreen;
+  }
+  .qui-nous-sommes {
+      text-align: center;
+      text-align: justify;
+      background-color: #f2f2f2;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  .qui-nous-sommes .title {
+      font-size: 34px;
+  }
+  
+  .qui-nous-sommes .description {
+      font-size: 18px;
+      padding: 50px 200px;
+  }
+  
+  /* Style général pour la section vente */
+.vente {
+  background-color: #f2f2f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.vente h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style pour le conteneur des cartes de produits */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Style pour chaque carte de produit */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 20%;
+}
+
+/* Style pour l'image du produit */
+.img_card {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Style pour les détails du produit */
+.card-details {
+  padding: 10px;
+}
+
+/* Style pour le titre du produit */
+.card-details h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Style pour le tarif du produit */
+.card-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Style pour le type du produit */
+.card-details p:last-child {
+  color: black;
+}
+
+/* Style pour le bouton dans chaque carte */
+.card-details .button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Style pour le bouton "Button" en bas de la section vente */
+.vente .button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* Style pour le bouton au survol */
+.button:hover {
+  background-color: #45a049;
+}
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ 
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  .profil{
+    min-height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+
+  }
+  
+  .inscription, .connexion{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ /* Style général pour le conteneur achat */
+.achat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 100px ;
+  
+}
+
+/* Style pour chaque carte de produit */
+.achat .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Style pour l'image du produit */
+.achat .img_card {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Style pour les détails du produit */
+.achat .card-details {
+  padding: 10px;
+}
+
+/* Style pour le titre du produit */
+.achat .card-details h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Style pour le tarif du produit */
+.achat .card-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Style pour le type du produit *
+
+/* Style pour le bouton */
+.achat .button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Style pour le bouton au survol */
+.button:hover {
+  background-color: #45a049;
+}
+
+  .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+  }
+  
+
+.profil h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.profil p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profil strong {
+    font-weight: bold;
+}
+
+.profil a {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+    text-decoration: none;
+}
+
+.profil a:hover {
+    text-decoration: underline;
+}
+
+.profil form {
+    margin-top: 20px;
+}
+
+.profil form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profil form input[type="text"],
+.profil form input[type="date"],
+.profil form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.profil form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profil form button[type="submit"]:hover {
+    background-color: darkgreen;
+}
+.modif_profil {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.modif_profil h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modif_profil form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.modif_profil label {
+  font-weight: bold;
+}
+
+.modif_profil input[type="text"],
+.modif_profil input[type="email"],
+.modif_profil select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modif_profil input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modif_profil input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Ajouter des styles spécifiques pour les labels et les champs liés à l'adresse du vendeur */
+.modif_profil h2 {
+  margin-top: 20px;
+}
+
+/* Styles pour le bouton radio et le texte "Les deux" dans la liste déroulante */
+.modif_profil input[type="radio"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Centrer le bouton radio "Les deux" avec le texte */
+.modif_profil option[value="les_deux"] {
+  padding-left: 20px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+  .footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
